@@ -1,0 +1,83 @@
+[
+    {
+        "name": "read_file",
+        "description": "从文件读取内容，当需要读取文件内容时，可以使用此工具",
+        "args": [
+            {
+                "name": "filename",
+                "type": "string",
+                "description": "read file name"
+            }
+        ]
+    },
+    {
+        "name": "append_to_file",
+        "description": "将内容追加到文件中，当需要向文件中添加内容时，可以使用此工具",
+        "args": [
+            {
+                "name": "filename",
+                "type": "string",
+                "description": "file name"
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "append to file content"
+            }
+        ]
+    },
+    {
+        "name": "write_to_file",
+        "description": "向文件写入内容，当需要将内容写入文件时，可以使用此工具",
+        "args": [
+            {
+                "name": "filename",
+                "type": "string",
+                "description": "file name"
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "write to file content"
+            }
+        ]
+    },
+    {
+        "name": "search",
+        "description": "这是一个搜索引擎，当你对大模型的返回结果不确定时，可以通过这个搜索引擎获取更多知识",
+        "args": [
+            {
+                "name": "query",
+                "type": "string",
+                "description": "search query to look up"
+            }
+        ]
+    },
+    {
+        "name": "compile_cpp",
+        "description": "当你需要编译C++文件时，可以使用此工具调用g++编译器",
+        "args": [
+            {
+                "name": "source_file",
+                "type": "string",
+                "description": "要编译的文件名"
+            },
+            {
+                "name": "output_file",
+                "type": "string",
+                "description": "输出的文件名"
+            }
+        ]
+    },
+    {
+        "name": "finish",
+        "description": "当你完成用户目标，使用此工具告知用户任务完成，并给出最终的结果",
+        "args": [
+            {
+                "name": "answer",
+                "type": "string",
+                "description": "完成目标后的最终返回结果"
+            }
+        ]
+    }
+]
